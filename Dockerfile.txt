@@ -1,4 +1,2 @@
-FROM nginx
-COPY index.html /usr/share/nginx/html/index.html
-EXPOSE 8000
-CMd ["nginx", "-g", "daemon off;"]
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html
